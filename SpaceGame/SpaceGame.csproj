@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\background.png" />
+    <None Remove="images\emptyLife.png" />
+    <None Remove="images\explosion1.png" />
+    <None Remove="images\explosion2.png" />
+    <None Remove="images\life.png" />
+    <None Remove="images\restartimage.png" />
+    <None Remove="images\rocket.png" />
+    <None Remove="images\startimage.png" />
+    <None Remove="images\target.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\background.png" />
+    <Resource Include="images\emptyLife.png" />
+    <Resource Include="images\explosion1.png" />
+    <Resource Include="images\explosion2.png" />
+    <Resource Include="images\life.png" />
+    <Resource Include="images\restartimage.png" />
+    <Resource Include="images\rocket.png" />
+    <Resource Include="images\startimage.png" />
+    <Resource Include="images\target.png" />
+  </ItemGroup>
+
+</Project>
