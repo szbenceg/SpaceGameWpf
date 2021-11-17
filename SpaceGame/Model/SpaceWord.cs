@@ -174,7 +174,7 @@ namespace SpaceGame.Model
             player = new Player();
 
             player.PositionX = width / 2 - (player.Width / 2);
-            player.PositionY = height - 100;
+            player.PositionY = height - 140;
             lifeNumber = 3;
 
             player.Width = playerWidth;
@@ -190,7 +190,7 @@ namespace SpaceGame.Model
 
             if (player.PositionX + player.Width / 2 <= target.PositionX + target.Width + player.Width / 2 + 2 &&
               player.PositionX + player.Width / 2 >= target.PositionX - player.Width / 2 - 2 &&
-              player.PositionY <= target.PositionY + target.Height &&
+              player.PositionY <= target.PositionY + target.Height -10 &&
               player.PositionY >= target.PositionY)
             {
                 return true;

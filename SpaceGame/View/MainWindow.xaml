@@ -13,12 +13,17 @@
     </Window.InputBindings>
 
     <Grid x:Name="WindowContainer">
-        <ToolBarTray Canvas.ZIndex="3" Margin="0,0,0,693" Height="30" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <ToolBarTray Grid.Row="0" Canvas.ZIndex="3">
             <ToolBar>
                 <Button Content="Start" Command="{Binding StartButtonPressed}" />
                 <Button Content="New" Command="{Binding NewGameButtonPressed}" />
                 <Button Content="Open" Command="{Binding OpenFilePressed}" />
-                <Button Content="Save" Command="{Binding }"/>
+                <Button Content="Save" Command="{Binding SaveGamePressed}"/>
                 <Button Content="Pause" Command="{Binding PauseButtonPressed}"/>
             </ToolBar>
         </ToolBarTray>
@@ -41,7 +46,7 @@
 
         <!--<Button Canvas.ZIndex="3" Command="{Binding StartButtonPressed}"  Margin="132,233,0,0" Height="30" Width="62"/>-->
 
-        <ItemsControl ItemsSource="{Binding Fields}">
+        <ItemsControl Grid.Row="1" ItemsSource="{Binding Fields}">
 
             <ItemsControl.Background>
                 <ImageBrush ImageSource="/images/background.png"/>
@@ -56,17 +61,36 @@
                 <Style>
                     <Setter Property="Canvas.Left" Value="{Binding PositionX}"/>
                     <Setter Property="Canvas.Top" Value="{Binding PositionY}"/>
-
                 </Style>
             </ItemsControl.ItemContainerStyle>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <!--<Border BorderBrush="Red" BorderThickness="5" Width="{Binding Width}" Height="{Binding Height}"/>-->
-                    <Image Source="{Binding ImageSource}" Width="{Binding Width}" Height="{Binding Height}"/>
+                    <StackPanel>
+                        <!--<Border BorderBrush="Red" BorderThickness="5" Width="{Binding Width}" Height="{Binding Height}"/>-->
+                        <Image Source="{Binding ImageSource}" Width="{Binding Width}" Height="{Binding Height}"/>
+                    </StackPanel>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
 
         </ItemsControl>
+
+        <StatusBar Grid.Row="2">
+            <StatusBarItem>
+                <TextBlock Text="Élet: " />
+            </StatusBarItem>
+            <StatusBarItem>
+                <TextBlock Text="{Binding LifeNumber}" />
+            </StatusBarItem>
+            <Separator />
+            <StatusBarItem>
+                <TextBlock Text="Idő: " />
+            </StatusBarItem>
+            <StatusBarItem>
+                <TextBlock Text="{Binding GameTime}" />
+            </StatusBarItem>
+            <Separator />
+            <StatusBarItem />
+        </StatusBar>
 
     </Grid>
 </Window>

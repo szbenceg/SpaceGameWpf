@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceGame.ViewModel.GameObjectField">
+    <Position X="2" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAQQgQAEAAEABAAAAAQAAAABgAAAAAAA=</HashCode>
+      <FileName>ViewModel\GameObjectField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceGame.ViewModel.PlayerField">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\PlayerField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceGame.ViewModel.TargetField">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\TargetField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceGame.ViewModel.DelegateCommand">
+    <Position X="8" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\DelegateCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceGame.ViewModel.SpaceViewModel">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAIEQABAAAACgIBEAKACAyGgACAwEBAEBAIACIoiY=</HashCode>
+      <FileName>ViewModel\SpaceViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceGame.ViewModel.ViewModelBase">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceGame.Persistance.Persistance">
+    <Position X="0.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Persistance\Persistance.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceGame.Persistance.ComponentProperties">
+    <Position X="1.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAQgQAAAIEABAAAAAQAAAAAACEAAAAA=</HashCode>
+      <FileName>Model\ComponentProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceGame.Model.Player">
+    <Position X="0.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceGame.Model.SpaceModel">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgQCAAAAIAAAAEAAAAQAgEAAQQoAAAEAACGBAAYg=</HashCode>
+      <FileName>Model\SpaceModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceGame.Model.SpaceWord">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAgACIIAACAAAAAkAKAAAAKAAEQMABAExACUAAAIg=</HashCode>
+      <FileName>Model\SpaceWord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceGame.Model.Target">
+    <Position X="3.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Target.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SpaceGame.Persistance.IFFileManager">
+    <Position X="3.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Persistance\IFFileManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
